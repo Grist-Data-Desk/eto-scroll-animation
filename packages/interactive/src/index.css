@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply relative;
+}
+
+#scrolly-content {
+  @apply relative mr-0 mt-[36px] h-[1000lvh] w-screen max-w-none md:mt-[60px];
+
+  margin-left: calc(50% - 50vw);
+}
+
+@media (min-width: 1070px) and (max-width: 1439px) {
+  #scrolly-content {
+    margin-left: -3vw;
+    margin-right: calc(-300px - 3vw);
+  }
+}
+
+@layer components {
+  .annotation {
+    font-size: 18px;
+    line-height: 28px;
+
+    @screen lg {
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+}
+
+@layer utilities {
+  .top-with-appeal-bar {
+    top: 47px;
+
+    @screen md {
+      top: 57px;
+    }
+
+    @screen lg {
+      top: 66px;
+    }
+  }
+
+  .h-screen-with-appeal-bar {
+    height: calc(100lvh - 47px);
+
+    @screen md {
+      height: calc(100lvh - 57px);
+    }
+
+    @screen lg {
+      height: calc(100lvh - 66px);
+    }
+  }
+}
+
+#scrolly-credit {
+  @apply text-earth text-credit mb-[36px] mt-2 block text-center font-sans font-semibold md:mb-[60px];
+}

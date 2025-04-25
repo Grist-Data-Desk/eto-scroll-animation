@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body>
+    <div id="scrolly-content">
+      <div class="top-with-appeal-bar sticky z-10 border">
+        <span
+          class="annotation text-smog absolute left-1/2 top-8 w-[80%] -translate-x-1/2 border-2 border-solid p-4 font-sans font-light md:max-w-[400px]"
+          id="scrolly-annotation"
+        >
+          Después de ser esterilizados con óxido de etileno, los productos
+          médicos se empaquetan y se cargan en camiones.
+        </span>
+      </div>
+      <canvas
+        class="h-screen-with-appeal-bar top-with-appeal-bar sticky w-full object-cover"
+        id="scrolly-canvas"
+      >
+      </canvas>
+    </div>
+    <cite id="scrolly-credit">Jesse Nichols / Parker Ziegler / Grist</cite>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
